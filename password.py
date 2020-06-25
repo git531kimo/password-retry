@@ -6,15 +6,13 @@
 # 如果錯誤就印出'密碼錯誤，還有  次機會'
 
 password = 'a123456'
-i = 3
-while True:
+i = 3 # 剩餘機會
+while i > 0:
 	pwd = input('請輸入蜜碼: ')
 	if pwd == password:
 		print('登入成功')
-		break
+		break # 逃出迴圈
 	else:
 		i = i - 1
 		print('密碼錯誤! 還有', i, '次機會')
-		if i == 0:
-			print('請洽系統管理人')
-			break
+		
